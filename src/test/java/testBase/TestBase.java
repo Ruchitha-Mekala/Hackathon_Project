@@ -13,8 +13,10 @@ import org.testng.annotations.BeforeTest;
  
 public class TestBase {
 	public static WebDriver driver; 
-	@Parameters({"browser", "url"})
+
+	
 	@BeforeTest(groups={"regression","sanity"})
+	@Parameters({"browser", "url"})
 	public void setup(String browser, String url) throws IOException {
 
 		switch(browser.toLowerCase()) {

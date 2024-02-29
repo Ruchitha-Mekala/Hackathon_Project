@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Chrome Test(failed)">
+  <test thread-count="5" name="Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://www.urbanladder.com/"/>
     <groups>
@@ -14,82 +14,10 @@
       <class name="testCases.TC_02_conditions">
         <methods>
           <include name="setup"/>
-          <include name="closeBrowser"/>
-          <include name="select_the_price_range_below_fifteen_thousand"/>
-        </methods>
-      </class> <!-- testCases.TC_02_conditions -->
-    </classes>
-  </test> <!-- Chrome Test(failed) -->
-  <test thread-count="5" name="Edge Test(failed)">
-    <parameter name="browser" value="Edge"/>
-    <parameter name="url" value="https://www.urbanladder.com/"/>
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <include name="regression"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="testCases.TC_07_confirmDetails">
-        <methods>
-          <include name="setup"/>
-          <include name="confirm_the_details_in_confirm_details_section"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC_07_confirmDetails -->
-      <class name="testCases.TC_04_living">
-        <methods>
-          <include name="setup"/>
-          <include name="user_clicks_on_the_living_menu"/>
-          <include name="closeBrowser"/>
-          <include name="retrieve_all_items_under_living_storage_sub_menu_and_print_the_same_on_the_console"/>
-        </methods>
-      </class> <!-- testCases.TC_04_living -->
-      <class name="testCases.TC_06_validation">
-        <methods>
-          <include name="setup"/>
-          <include name="validate_the_email_id"/>
-          <include name="closeBrowser"/>
-          <include name="the_id_is_not_valid_and_user_gives_correct_email_id"/>
-        </methods>
-      </class> <!-- testCases.TC_06_validation -->
-      <class name="testCases.TC_01_itemToBeSearched">
-        <methods>
-          <include name="closePopUp"/>
-          <include name="openBrowser"/>
-          <include name="setup"/>
-          <include name="closeBrowser"/>
-          <include name="getItemName"/>
-        </methods>
-      </class> <!-- testCases.TC_01_itemToBeSearched -->
-      <class name="testCases.TC_05_giftCard">
-        <methods>
-          <include name="clicks_on_the_next_button"/>
-          <include name="setup"/>
-          <include name="user_clicks_on_gift_cards"/>
-          <include name="chooses_birthday_or_anniversary"/>
-          <include name="closeBrowser"/>
-          <include name="enters_the_valid_amount_month_and_date"/>
-          <include name="fills_to_from_details"/>
-        </methods>
-      </class> <!-- testCases.TC_05_giftCard -->
-      <class name="testCases.TC_03_getItems">
-        <methods>
-          <include name="fetch_the_top_three_items_print_all_details_in_console_output"/>
-          <include name="setup"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testCases.TC_03_getItems -->
-      <class name="testCases.TC_02_conditions">
-        <methods>
-          <include name="setup"/>
           <include name="sorts_by_price_high_to_low"/>
           <include name="closeBrowser"/>
-          <include name="select_the_price_range_below_fifteen_thousand"/>
-          <include name="chooses_the_category_kid_bookshelves"/>
-          <include name="exclude_out_of_stock"/>
         </methods>
       </class> <!-- testCases.TC_02_conditions -->
     </classes>
-  </test> <!-- Edge Test(failed) -->
+  </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
